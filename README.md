@@ -23,14 +23,14 @@ E2E Test Scenarios:
 
 1. Login Test: Verify successful login with valid credentials.
 2. Sorting Products (Z-A): Validate product sorting in descending order.
-3. Sorting by Price (High to Low): Ensure price sorting is accurate.
+3. Sorting by Price (High to Low): Ensure accurate price sorting.
 4. Cart & Checkout Test: Add multiple products, verify the cart, and complete the checkout process.
 
 Edge Test Scenarioes:
 
 5. Invalid Login Credentials
 6. Login with empty filed
-7. Checkout with ethe mpty cart
+7. Checkout with the empty cart
 8. Proceeding to checkout with an empty cart should be blocked
 
 Accessibility Test Scenarios:
