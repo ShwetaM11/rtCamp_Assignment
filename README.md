@@ -43,7 +43,7 @@ Accessibility Test Scenarios:
 
 1. Install Node JS and IDE ( VS Code )
 
-Install Playwright using the command as npm package
+- Install Playwright using the command as npm package
 
 2.1 Create a new folder and open it in VS Code 
 2.2 Goto Terminal and run command
@@ -75,3 +75,29 @@ npm install @axe-core/playwright
 
 4. Generate and view HTML report
 - npx playwright show-report
+
+# Framework Structure 
+
+rtCamp_Assignment/
+│── test/
+│   │── Assignments/
+│   │   │── / AssignmentOfMainScenarioes
+│   │   │── / BonusFeatures
+│   │   │── / pages
+│   │   │   │── / AssignmentOfMainScenarioes              
+│   │   │   │   │── E2ETestScenarioes.spec.js 
+│   │   │   │── / BonusFeatures
+│   │   │   │   │── Accessesibility.spec.js    
+│   │   │   │   │── EdgeTestScenarioes.spec.js 
+│   │   │   │── pages/                
+│   │   │   │   │── cartPage.js
+│   │   │   │   │── checkoutPage.js
+│   │   │   │   │── loginPage.js
+│   │   │   │   │── productPage.js
+│   │   │ ── / testData.js        
+│   │   │   │── screenshots/         
+│   │   │   │── package-lock.json              
+│   │   │   │── package.json                          
+│   │   │   │── playwright.config.js  
+
+
