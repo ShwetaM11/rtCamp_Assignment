@@ -41,29 +41,33 @@ Accessibility Test Scenarios:
 # Prerequisites
 
 1. Install Node JS and IDE ( VS Code )  
+
 2. Install Playwright using the command as npm package  
   - Create a new folder and open it in VS Code
   - Goto Terminal and run command
   - npm init playwright@latest
   - The following will be added
-    package.json - node project management file 
-    playwright.config.js - Configuration file 
-    tests folder - basic example test 
-    tests-examples folder - detailed example tests 
-    .gitignore - to be used during git commit and push 
-    playwright.yml - to be used during ci cd pipeline (GitHub workflows)
+    - package.json - node project management file 
+    - playwright.config.js - Configuration file 
+    - tests folder - basic example test 
+    - tests-examples folder - detailed example tests 
+    - .gitignore - to be used during git commit and push 
+    - playwright.yml - to be used during ci cd pipeline (GitHub workflows)
   - Check playwright added
   - npm playwright -v
+
 3. Check playwright command options
   - npx playwright -h
+
 4. Install axe-core Accessibility Library
   - npm install @axe-core/playwright
 
 # Running Tests
 
- 1. Run all tests
- 2. npx playwright test  
-  2.1 Run a specific test  
+1. Run all tests
+- npx playwright test  
+
+2. Run a specific test  
 - npx playwright test /test/Assignments/AssignmentOfMainScenarioes/E2ETestScenarioes.spec.js
 
 3. Run tests in headed mode (visible browser)
