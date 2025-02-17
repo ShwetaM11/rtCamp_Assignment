@@ -1,35 +1,35 @@
-# Project : SauceDemo E2E Test Automation with Playwright for rtCamp
+# Swag Labs E2E Test Automation with Playwright for rtCamp
 
-## Project Description
-This project automates End-to-End (E2E) testing for the SauceDemo website using Playwright. It validates core functionalities such as user authentication, product sorting, cart management, and checkout processes to ensure a seamless user experience.
+## Project description
+This project automates End-to-End (E2E) testing for the <a href="https://www.saucedemo.com/">Swag Labs</a> using Playwright. It validates core functionalities such as user authentication, product sorting, cart management, and checkout processes to ensure a seamless user experience.
 
-## Key Features
-**Login Automation:** Tests authentication for valid and invalid users.  
-**Product Sorting Validation:** Ensures correct sorting by name and price.   
-**Cart Functionality:** Adds, removes, and verifies cart items.  
-**Checkout Process Testing:** Completes order placement with verification of totals.  
+## Key features
+**Login:** Test login authentication for valid and invalid users.  
+**Product sorting:** Ensures correct sorting by name and price.   
+**Cart functionality:** Adds, removes, and verifies cart items.  
+**Checkout process:** Completes order placement with verification of totals.  
 **Screenshots & Reports:** Generates failure screenshots and interactive HTML reports.  
   
-## Tech Stack 
-**Test Framework:** Playwright (Page Object Model)  
-**Programming Language:** JavaScript  
-**Test Runner:** Playwright  
-**Test Reports & Logs:** Playwright HTML Reports & Screenshots  
+## Tech-stack 
+**Test framework:** Playwright (Page Object Model)  
+**Programming language:** JavaScript  
+**Test runner:** Playwright  
+**Test reports & Logs:** Playwright HTML Reports & Screenshots  
   
-## Test Scenarios Covered
-**E2E Test Scenarios:**  
-1. Login Test: Verify successful login with valid credentials.  
-2. Sorting Products (Z-A): Validate product sorting in descending order.  
-3. Sorting by Price (High to Low): Ensure accurate price sorting.  
-4. Cart & Checkout Test: Add multiple products, verify the cart, and complete the checkout process.  
+## Test scenarios covered
+**E2E test scenarios:**  
+1. Login: Verify successful login with valid credentials.  
+2. Sorting products (Z-A): Validate product sorting in descending order.  
+3. Sorting by price (High to Low): Ensure accurate price sorting.  
+4. Cart & Checkout: Add multiple products, verify the cart, and complete the checkout process.  
 
-**Edge Test Scenarioes:**  
-1. Invalid Login Credentials
+**Edge test scenarioes:**  
+1. Invalid login credentials
 2. Login with empty filed
 3. Checkout with the empty cart
 4. Proceeding to checkout with an empty cart should be blocked  
 
-**Accessibility Test Scenarios:**  
+**Accessibility test scenarios:**  
 1. Logs full accessibility scan results
 2. Ensures no violations based on selected rules
 3. A page should not have any automatically detectable WCAG A or AA violations.  
@@ -59,32 +59,46 @@ This project automates End-to-End (E2E) testing for the SauceDemo website using 
   <code>npm install @axe-core/playwright</code>
 </ol>
 
-## Running Tests
-1. Run all tests
-```npx playwright test```  
-2. Run a specific test
+## Running tests
+1. Install npm dependencies from the project root folder
+  ```npm install```
+2. Run all tests
+   ```npx playwright test```  
+3. Run a specific test
    ```npx playwright test /test/Assignments/AssignmentOfMainScenarioes/E2ETestScenarioes.spec.js```
-3. Run tests in headed mode (visible browser)
+4. Run tests in headed mode (visible browser)
   ```npx playwright test --headed```
-4. Generate and view HTML report
+5. Generate and view HTML report
   ```npx playwright show-report```
+6. To debug test-script 
+  ```npx playwright test --debug```
 
-## Framework Structure
+## Test report
+Check already generated report [here](playwright-report/index.html)
+
+ ## Demo Videos 
+
+ 1. <a href="https://www.loom.com/share/c4ac0f89fa7d4987b09b589ab1c0c86a?sid=056b6dfd-0c68-46ab-bf81-923d0e12f24e">Playwright Automation Suite Overview</a>
+ 2. <a href= "https://www.loom.com/share/d58938c70f564ae2878d1a7347d0ae92?sid=2a81a0dc-de8d-4d6f-809c-37565d353764">Accessibility and Edge Test Cases Overview</a>
+ 3. <a href="https://www.loom.com/share/dbffaaad70924ef9a2bb7fd74604488b?sid=7946a127-61e2-419f-891c-8788c908199a">Execution of testcases in headed mode</a>
+
+## Framework structure
 rtCamp_Assignment  
+|&emsp;/playwright-report  
+|&emsp;|&emsp;index.html  
 |&emsp;/test  
-|&emsp;│&emsp;/Assignments/  
-|&emsp;│&emsp;│&emsp;/AssignmentOfMainScenarioes  
-|&emsp;│&emsp;│&emsp;│&emsp;E2ETestScenarioes.spec.js  
-│&emsp;│&emsp;│&emsp;/BonusFeatures  
-│&emsp;│&emsp;│&emsp;|&emsp;Accessesibility.spec.js  
-│&emsp;│&emsp;│&emsp;|&emsp;EdgeTestScenarioes.spec.js  
+|&emsp;│&emsp;/assignments  
+|&emsp;│&emsp;│&emsp;/assignmentOfMainScenarioes  
+|&emsp;│&emsp;│&emsp;│&emsp;e2eTestScenarioes.spec.js  
+│&emsp;│&emsp;│&emsp;/bonusFeatures  
+│&emsp;│&emsp;│&emsp;|&emsp;accessesibility.spec.js  
+│&emsp;│&emsp;│&emsp;|&emsp;edgeTestScenarioes.spec.js  
 │&emsp;│&emsp;│&emsp;/pages  
 │&emsp;│&emsp;│&emsp;|&emsp;cartPage.js  
 │&emsp;│&emsp;│&emsp;|&emsp;checkoutPage.js  
 │&emsp;│&emsp;│&emsp;|&emsp;loginPage.js  
 │&emsp;│&emsp;│&emsp;|&emsp;productPage.js  
 |&emsp;│&emsp;│&emsp;testData.js  
-|&emsp;/screenshots  
 |&emsp;package-lock.json  
 |&emsp;package.json  
 |&emsp;playwright.config.js  
